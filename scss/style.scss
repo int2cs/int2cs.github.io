@@ -205,52 +205,11 @@ nav {
 		}
 	}
 }
-.bg1 {
-	background: center / cover url(../img/bg_01.jpg);
-	background-attachment: fixed;
-	.bandeau {
-		position: relative;
-		height: 300px;
-		padding: 2em;
-		.devices {
-			position: absolute;
-			top: -10%;
-			left: 35%;
-			width: 500px;
-			display: block;
-			margin: auto;
-		}
-		.logoCampus{
-			display: block;
-			width: 300px;
-			margin: 2em auto;
-		}
-		h4{
-			width: 80%;
-			margin:auto;
-			text-align: center;
-			color: $white;
-			font-size: 2em;
-			text-transform: uppercase;
-		}
-		h3 {
-			width: 50%;
-			margin: auto;
-			text-align: center;
-			color: $white;
-		}
-		h2 {
-			width: 50%;
-			margin: auto;
-			text-align: center;
-			color: $white;
-		}
-	}
-	#competences {
+#competences {
 		padding-top: 150px;
 		background: $white;
-	}
 }
+
 #competences {
 	.competences_containt {
 		width: 80%;
@@ -387,6 +346,40 @@ nav {
 					color: $darkgrey;
 					text-transform: uppercase;
 				}
+			}
+		}
+	}
+}
+
+#about{
+	background: $white;
+	padding: 30px;
+
+	.about_content{
+		width: 80%;
+		margin: 50px auto;
+		display: flex;
+		justify-content: center;
+
+		.bloc{
+			margin: 0 10px;
+			flex: 1;
+
+			p{
+				text-align: justify;
+				text-align: left;
+				color: $grey;
+				font-size: 1rem;
+				padding: 10px;
+				line-height: 1.5rem;
+
+				span{
+					text-decoration: underline;
+				}
+			}
+
+			img{
+				width: 500px;
 			}
 		}
 	}

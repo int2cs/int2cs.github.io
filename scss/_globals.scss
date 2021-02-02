@@ -31,3 +31,53 @@ body {
 		text-transform: uppercase;
 	}
 }
+
+.bg1 {
+	background: center / cover url(../img/bg_01.jpg);
+	background-attachment: fixed;
+	.bandeau {
+		position: relative;
+		height: 300px;
+		padding: 2em;
+		.devices {
+			position: absolute;
+			top: -10%;
+			left: 35%;
+			width: 500px;
+			display: block;
+			margin: auto;
+		}
+		.logoCampus{
+			display: block;
+			width: 300px;
+			margin: 2em auto;
+		}
+		h4{
+			width: 80%;
+			margin:auto;
+			text-align: center;
+			color: $white;
+			font-size: 2em;
+			text-transform: uppercase;
+		}
+		h3 {
+			width: 50%;
+			margin: auto;
+			text-align: center;
+			color: $white;
+		}
+		h2 {
+			width: 50%;
+			margin: auto;
+			text-align: center;
+			color: $white;
+		}
+
+		.whoiam{
+			width: 300px;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+}

@@ -41,6 +41,63 @@ body {
   text-transform: uppercase;
 }
 
+.bg1 {
+  background: center/cover url(../img/bg_01.jpg);
+  background-attachment: fixed;
+}
+
+.bg1 .bandeau {
+  position: relative;
+  height: 300px;
+  padding: 2em;
+}
+
+.bg1 .bandeau .devices {
+  position: absolute;
+  top: -10%;
+  left: 35%;
+  width: 500px;
+  display: block;
+  margin: auto;
+}
+
+.bg1 .bandeau .logoCampus {
+  display: block;
+  width: 300px;
+  margin: 2em auto;
+}
+
+.bg1 .bandeau h4 {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+.bg1 .bandeau h3 {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+}
+
+.bg1 .bandeau h2 {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+}
+
+.bg1 .bandeau .whoiam {
+  width: 300px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
 #bg_container {
   background: center/cover fixed no-repeat url("../img/23964bw.jpg");
 }
@@ -273,56 +330,7 @@ nav > ul > li > .home {
   background: center/cover url(../img/iconPlus.png);
 }
 
-.bg1 {
-  background: center/cover url(../img/bg_01.jpg);
-  background-attachment: fixed;
-}
-
-.bg1 .bandeau {
-  position: relative;
-  height: 300px;
-  padding: 2em;
-}
-
-.bg1 .bandeau .devices {
-  position: absolute;
-  top: -10%;
-  left: 35%;
-  width: 500px;
-  display: block;
-  margin: auto;
-}
-
-.bg1 .bandeau .logoCampus {
-  display: block;
-  width: 300px;
-  margin: 2em auto;
-}
-
-.bg1 .bandeau h4 {
-  width: 80%;
-  margin: auto;
-  text-align: center;
-  color: #fff;
-  font-size: 2em;
-  text-transform: uppercase;
-}
-
-.bg1 .bandeau h3 {
-  width: 50%;
-  margin: auto;
-  text-align: center;
-  color: #fff;
-}
-
-.bg1 .bandeau h2 {
-  width: 50%;
-  margin: auto;
-  text-align: center;
-  color: #fff;
-}
-
-.bg1 #competences {
+#competences {
   padding-top: 150px;
   background: #fff;
 }
@@ -482,5 +490,45 @@ nav > ul > li > .home {
 #portfolio .portfolio_contain .card_description h5:last-child {
   color: #444444;
   text-transform: uppercase;
+}
+
+#about {
+  background: #fff;
+  padding: 30px;
+}
+
+#about .about_content {
+  width: 80%;
+  margin: 50px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#about .about_content .bloc {
+  margin: 0 10px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#about .about_content .bloc p {
+  text-align: justify;
+  text-align: left;
+  color: #838383;
+  font-size: 1rem;
+  padding: 10px;
+  line-height: 1.5rem;
+}
+
+#about .about_content .bloc p span {
+  text-decoration: underline;
+}
+
+#about .about_content .bloc img {
+  width: 500px;
 }
 /*# sourceMappingURL=style.css.map */
