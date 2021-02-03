@@ -15,6 +15,10 @@ body {
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-size: 18px;
 	background: $darkgrey;
+
+	@media screen and ( max-width: 978px ){
+		font-size: 1.5rem;
+	}
 }
 .titre {
 	width: 80%;
@@ -22,11 +26,19 @@ body {
 	text-align: center;
 	h1 {
 		text-transform: uppercase;
+		
+		@media screen and ( max-width: 460px ){
+			font-size: 2.5rem;
+		}
 	}
 	h2 {
 		color: $lightgrey;
 		text-transform: uppercase;
 		font-size: 1.5em;
+
+		@media screen and ( max-width: 460px ){
+			font-size: 1.5rem;
+		}
 	}
 	h4{
 		text-transform: uppercase;
@@ -42,11 +54,16 @@ body {
 		padding: 2em;
 		.devices {
 			position: absolute;
-			top: -10%;
-			left: 35%;
+			bottom: -170px;
+			left: 50%;
+			transform: translateX(-50%);
 			width: 500px;
 			display: block;
 			margin: auto;
+
+			@media screen and ( max-width: 945px ){
+				width: 400px;
+			}
 		}
 		.logoCampus{
 			display: block;
@@ -58,27 +75,50 @@ body {
 			margin:auto;
 			text-align: center;
 			color: $white;
-			font-size: 2em;
+			font-size: 1em;
 			text-transform: uppercase;
+
+			@media screen and (max-width: 720px)
+			{
+				font-size: 0.5rem;
+			}
 		}
 		h3 {
 			width: 50%;
 			margin: auto;
 			text-align: center;
+			font-size: 1.5rem;
 			color: $white;
+
+			@media screen and (max-width: 720px)
+			{
+				font-size: 1rem;
+			}
 		}
 		h2 {
 			width: 50%;
 			margin: auto;
+			font-size: 2rem;
 			text-align: center;
 			color: $white;
+
+			@media screen and (max-width: 720px)
+			{
+				font-size: 1.5rem;
+			}
 		}
 
 		.whoiam{
 			width: 300px;
 			position: absolute;
 			left: 50%;
+			bottom: -10px;
 			transform: translateX(-50%);
+
+			@media screen and (max-width: 978px) {
+				width: 200px;
+				bottom: -10px;
+		}
 		}
 	}
 }
