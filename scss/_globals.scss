@@ -14,6 +14,10 @@ body {
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-size: 18px;
 	background: $darkgrey;
+
+	@media screen and ( max-width: 976px ){
+		font-size: 2rem;
+	}
 }
 .titre {
 	width: 80%;
@@ -41,11 +45,19 @@ body {
 		padding: 2em;
 		.devices {
 			position: absolute;
-			top: -10%;
-			left: 35%;
+			bottom: -170px;
+			left: 50%;
+			transform: translateX(-50%);
 			width: 500px;
 			display: block;
 			margin: auto;
+
+			@media screen and ( max-width: 735px ){
+				width: 70%;
+			}
+			@media screen and ( max-width: 575px ){
+				
+			}
 		}
 		.logoCampus{
 			display: block;

@@ -35,6 +35,10 @@ header {
 	height: 60px;
 	background: $grey;
 	opacity: 3;
+
+	@media screen and ( max-width: 940px ){
+		display: none;
+	}
 }
 nav {
 	position: absolute;
@@ -70,6 +74,10 @@ nav {
 				padding: 10px 20px !important;
 			}
 		}
+	}
+
+	@media screen and ( max-width: 940px ){
+		display: none;
 	}
 }
 
@@ -110,6 +118,11 @@ nav {
 
 				transform: translate(-50%, -50%);
 			}
+
+			@media screen and ( max-width: 1415px ){
+				float: none;
+				margin: 2em  auto;
+			}
 		}
 
 		.description{
@@ -124,8 +137,16 @@ nav {
 			em{
 				color: $red;
 			}
+
+			@media screen and ( max-width: 1415px ){
+				text-align: center;
+			}
 		}
 	}
+
+	@media screen and ( max-width: 1415px ){
+		padding: 0 0 30px 0;
+	}	
 }
 #services {
 	background: $white;
@@ -153,6 +174,10 @@ nav {
 				}
 				.icon {
 					background: center / cover url(../img/iconPlusHover.png);
+
+					@media screen and ( max-width: 1360px ){
+						visibility: hidden;
+					}
 				}
 			}
 
@@ -173,6 +198,10 @@ nav {
 				}
 				.icon {
 					background: center / cover url(../img/iconPlusHover.png);
+
+					@media screen and ( max-width: 1360px ){
+						visibility: hidden;;
+					}
 				}
 			}
 
@@ -202,15 +231,18 @@ nav {
 			height: 55px;
 			display: inline-block;
 			background: center / cover url(../img/iconPlus.png);
+
+			@media screen and ( max-width: 1360px ){
+				visibility: hidden;;
+			}
 		}
 	}
 }
-#competences {
-		padding-top: 150px;
-		background: $white;
-}
 
 #competences {
+	padding-top: 150px;
+	background: $white;
+
 	.competences_containt {
 		width: 80%;
 		margin: auto;
@@ -231,8 +263,16 @@ nav {
 						left: 40px;
 						font-size: 1.2em;
 						font-weight: bold;
+
+						@media screen and ( max-width: 1132px ){
+							content: "";
+						}
+					}
+					@media screen and ( max-width: 1132px ){
+						text-align: center;
 					}
 				}
+
 			}
 		}
 		>div {
@@ -256,6 +296,12 @@ nav {
 				font-size: 1.2em;
 				color: $red;
 			}
+		}
+
+		@media screen and ( max-width: 1132px ){
+			display: block;
+			width: 95%;
+			margin: auto;
 		}
 	}
 }
@@ -328,6 +374,10 @@ nav {
 
 			img{
 				border-radius: 2%;
+
+				@media screen and ( max-width: 1132px ){
+					width: 100%;
+				}
 			}
 
 			&_description{
@@ -346,7 +396,16 @@ nav {
 					color: $darkgrey;
 					text-transform: uppercase;
 				}
+
+				@media screen and ( max-width: 1132px ){
+					margin-top: 0;
+				}
 			}
+
+			@media screen and ( max-width: 585px ){
+			width: 95%;
+			padding: 10px
+		}
 		}
 	}
 }
@@ -376,11 +435,37 @@ nav {
 				span{
 					text-decoration: underline;
 				}
+
+				@media screen and ( max-width: 1415px ){
+				text-align: justify;
+				}
 			}
 
 			img{
 				width: 500px;
+
+				/* @media screen and ( max-width: 1415px ){
+					width: 350px;
+				} */
+				@media screen and ( max-width: 1415px ){
+					display: block;
+					margin: auto;
+				}
 			}
+
+			@media screen and ( max-width: 1360px ){
+				margin: 50px 30px;
+			}
+		}
+		/* .hidden{
+			@media screen and ( max-width: 1360px ){
+				display: none;
+			}
+		} */
+
+		@media screen and ( max-width: 1415px ){
+			flex-direction: column;
+			margin-bottom: 50px;
 		}
 	}
 }
