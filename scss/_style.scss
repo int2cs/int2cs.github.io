@@ -1,0 +1,334 @@
+
+.menuHamburger{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: $lightgrey;
+}
+
+#bg_container{
+	background: center / cover fixed no-repeat url("../img/23964bw.jpg");
+}
+
+.vh {
+	width: 100%;
+    overflow: hidden;
+    padding: 1em;
+	
+	.vh_content {
+		width: 70%;
+		margin: auto;
+		color: $white;
+		font-size: 1.5em;
+		text-align: center;
+		text-transform: uppercase;
+
+		.circle{
+			position: relative;
+			width: 150px;
+			height: 150px;
+			background: #eee;
+			border-radius: 50%;
+			margin: 10px auto;
+			
+			border: 5px solid $white;
+			background: $red;
+
+			.avatar{
+				position: absolute;
+				width: 80%;
+				height: 80%;
+				background: center / contain no-repeat url(../img/panda.png);
+				left: 50%;
+				top: 50%;
+
+				transform: translate(-50%, -50%);
+			}
+		}
+
+		.description{
+			text-align: left;
+			letter-spacing: 0;
+            text-transform: none;
+            
+            p{
+                font-family: font-manuscrite, "sans serif";
+                text-align: center;
+                line-height: 1.2em;
+            }
+
+			em{
+				color: $red;
+			}
+		}
+	}	
+}
+
+#services {
+
+    .services_content{
+        width: 95%;
+        margin: auto;
+
+        ul{
+          padding: 0;
+          margin: 1.5em 0;
+
+          &:nth-child(2n+2){
+            text-align: right;
+          }
+
+          li:first-child{
+            // TITRE DES SERVICES PROPOSES
+              color: red;
+              text-transform: uppercase;
+              font-weight: bold;
+
+          }
+        }
+
+        @media screen and (min-width: 800px){
+
+          width: 95%;
+          display: flex;
+          justify-content: space-evenly;
+
+          ul{
+            width: 350px;
+
+            li{
+              width: 300px;
+            }
+          }
+          
+          .services_content_bloc_1 ul{
+            text-align: right;
+          }
+
+          .services_content_bloc_2 ul{
+            text-align: left;
+          }
+        }
+    }
+
+
+    /* .icon {
+        width: 55px;
+        height: 55px;
+        display: inline-block;
+        background: center / cover url(../img/iconPlus.png);
+
+        @media screen and ( max-width: 1360px ){
+            visibility: hidden;;
+        }
+    } */
+}
+
+#competences{
+  background: $white;
+  padding-top: 3em;
+
+  .competences_content{
+
+    .comp_domaine{
+
+    h3{
+      margin-left: 1em;
+    }
+
+    ul{
+      position: relative;
+      padding: 0;
+      margin: 2em;
+
+      
+      
+      li:first-child{
+        // TITRE DES COMPETENCES
+        color: red;
+        font-weight: bold;
+        text-transform: uppercase;
+        
+      }
+      li:last-child{
+        // DESCRIPTION DES COMPETENCES
+          color: $lightgrey;
+      }
+
+      @media screen and (min-width: 800px){
+        margin: 1em;
+      }
+    }
+    }
+
+    .comp_dev{
+
+      h3{
+        margin-left: 1em;
+      }
+
+      .progressBarList {
+
+        padding: 0.5em;
+
+        .progressBar {
+          color: $white;
+          background: $ultralightgrey;
+          margin: 0.5em;
+
+          >span {
+            font-size: 0.8em;
+            text-transform: uppercase;
+            background: $red;
+            padding: 3px 10px;
+          }
+        }
+      }
+      .progHTML {
+        display: inline-block;
+        width: 80%;
+      }
+      .progPHP {
+        display: inline-block;
+        width: 30%;
+      }
+      .progJS {
+        display: inline-block;
+        width: 50%;
+      }
+      .progSQL {
+        display: inline-block;
+        width: 30%;
+      }
+      .progPS {
+        display: inline-block;
+        width: 35%;
+      }
+      .progILL {
+        display: inline-block;
+        width: 35%;
+      }
+      .progIND {
+        display: inline-block;
+        width: 40%;
+      }
+      .progXD {
+        display: inline-block;
+        width: 30%;
+      }
+
+    }
+
+    @media screen and (min-width: 800px) {
+      display: flex;
+      justify-content: center;
+
+      .comp_domaine{
+        flex: 2;
+
+        ul{
+
+          padding: 0 0 0 4em;
+          &::before{
+          content: "√";
+          color: $green;
+          display: inline-block;
+          position: absolute;
+          left: 45px
+      }
+        }
+      }
+      .comp_dev{
+        flex: 3;
+      }
+    }
+  }
+}
+
+#portfolio{
+  padding-top: 3em;
+  background: $white;
+
+  .portfolio_content{
+    padding: 0.5em;
+
+    .card{
+      width: 95%;
+      margin: auto;
+      background: $ultralightgrey;
+      padding: 5px;
+      margin: 0 auto 50px auto;
+      border-radius: 3px;
+
+      img{
+        width: 100%;
+      }
+
+      h5:first-child{
+        color: $lightgrey;
+      }
+      h5:last-child{
+        color: $red;
+        font-size: 0.7em;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  @media screen and (min-width: 800px){
+    .portfolio_content{
+      display: flex;
+      flex-wrap: wrap;
+      .card{
+        max-width: 600px;
+      }
+    }
+  }
+}
+
+#about{
+  .about_content{
+    width: 100%;
+    padding: 5px;
+
+    .bloc{
+      h2{
+        margin: 1em auto;
+      }
+
+      p{
+        text-align: justify;
+      }
+
+    }
+
+    .img{
+      width: 100%;
+      max-width: 650px;
+      margin: 10px auto;
+
+      img{
+        width: 90%;
+        margin: auto;
+      }
+    }
+    
+    @media screen and (min-width: 1200px){
+      display: flex;
+      flex-wrap: wrap;
+      padding: 3em;
+
+      .bloc{
+        flex: 1;
+      }
+
+      .img{
+        flex: 2;
+      }
+    }
+  }
+
+}
+
+

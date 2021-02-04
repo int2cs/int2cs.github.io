@@ -1,0 +1,455 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "font-manuscrite";
+  src: url(../fonts/Handlee-Regular.ttf);
+}
+
+@font-face {
+  font-family: "font-principal";
+  src: url(../fonts/Nunito-Regular.ttf);
+  font-weight: normal;
+}
+
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: font-principal, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+main {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+.titre {
+  margin-bottom: 2em;
+}
+
+.titre h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0.5em auto;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.titre h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0.5em auto;
+  color: #838383;
+  text-transform: uppercase;
+}
+
+.separation {
+  background: center/cover fixed url(../img/bg_01.jpg);
+}
+
+.separation .bandeau {
+  position: relative;
+  padding: 1em;
+}
+
+.separation .bandeau h4 {
+  margin: 1em auto;
+  text-align: center;
+  color: #fff;
+  font-size: 0.5em;
+  text-transform: uppercase;
+}
+
+.separation .bandeau h3 {
+  margin: 1em auto;
+  text-align: center;
+  font-size: 1em;
+  color: #fff;
+}
+
+.separation .bandeau h2 {
+  margin: 1em auto;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #fff;
+}
+
+.separation .bandeau .devices {
+  position: absolute;
+  bottom: -50px;
+  width: 200px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: block;
+  margin: auto;
+}
+
+.separation .bandeau .logoCampus {
+  display: block;
+  width: 220px;
+  margin: 1em auto;
+}
+
+@media screen and (min-width: 800px) {
+  .separation .bandeau .logoCampus {
+    width: 300px;
+  }
+}
+
+.separation .bandeau .whoiam {
+  display: block;
+  margin: auto;
+  width: 150px;
+  -webkit-transform: translateY(13%);
+          transform: translateY(13%);
+}
+
+.menuHamburger {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #aaaaaa;
+}
+
+#bg_container {
+  background: center/cover fixed no-repeat url("../img/23964bw.jpg");
+}
+
+.vh {
+  width: 100%;
+  overflow: hidden;
+  padding: 1em;
+}
+
+.vh .vh_content {
+  width: 70%;
+  margin: auto;
+  color: #fff;
+  font-size: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.vh .vh_content .circle {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background: #eee;
+  border-radius: 50%;
+  margin: 10px auto;
+  border: 5px solid #fff;
+  background: #f05454;
+}
+
+.vh .vh_content .circle .avatar {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  background: center/contain no-repeat url(../img/panda.png);
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.vh .vh_content .description {
+  text-align: left;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.vh .vh_content .description p {
+  font-family: font-manuscrite, "sans serif";
+  text-align: center;
+  line-height: 1.2em;
+}
+
+.vh .vh_content .description em {
+  color: #f05454;
+}
+
+#services {
+  /* .icon {
+        width: 55px;
+        height: 55px;
+        display: inline-block;
+        background: center / cover url(../img/iconPlus.png);
+
+        @media screen and ( max-width: 1360px ){
+            visibility: hidden;;
+        }
+    } */
+}
+
+#services .services_content {
+  width: 95%;
+  margin: auto;
+}
+
+#services .services_content ul {
+  padding: 0;
+  margin: 1.5em 0;
+}
+
+#services .services_content ul:nth-child(2n+2) {
+  text-align: right;
+}
+
+#services .services_content ul li:first-child {
+  color: red;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 800px) {
+  #services .services_content {
+    width: 95%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  #services .services_content ul {
+    width: 350px;
+  }
+  #services .services_content ul li {
+    width: 300px;
+  }
+  #services .services_content .services_content_bloc_1 ul {
+    text-align: right;
+  }
+  #services .services_content .services_content_bloc_2 ul {
+    text-align: left;
+  }
+}
+
+#competences {
+  background: #fff;
+  padding-top: 3em;
+}
+
+#competences .competences_content .comp_domaine h3 {
+  margin-left: 1em;
+}
+
+#competences .competences_content .comp_domaine ul {
+  position: relative;
+  padding: 0;
+  margin: 2em;
+}
+
+#competences .competences_content .comp_domaine ul li:first-child {
+  color: red;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#competences .competences_content .comp_domaine ul li:last-child {
+  color: #aaaaaa;
+}
+
+@media screen and (min-width: 800px) {
+  #competences .competences_content .comp_domaine ul {
+    margin: 1em;
+  }
+}
+
+#competences .competences_content .comp_dev h3 {
+  margin-left: 1em;
+}
+
+#competences .competences_content .comp_dev .progressBarList {
+  padding: 0.5em;
+}
+
+#competences .competences_content .comp_dev .progressBarList .progressBar {
+  color: #fff;
+  background: #dbdbdb;
+  margin: 0.5em;
+}
+
+#competences .competences_content .comp_dev .progressBarList .progressBar > span {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  background: #f05454;
+  padding: 3px 10px;
+}
+
+#competences .competences_content .comp_dev .progHTML {
+  display: inline-block;
+  width: 80%;
+}
+
+#competences .competences_content .comp_dev .progPHP {
+  display: inline-block;
+  width: 30%;
+}
+
+#competences .competences_content .comp_dev .progJS {
+  display: inline-block;
+  width: 50%;
+}
+
+#competences .competences_content .comp_dev .progSQL {
+  display: inline-block;
+  width: 30%;
+}
+
+#competences .competences_content .comp_dev .progPS {
+  display: inline-block;
+  width: 35%;
+}
+
+#competences .competences_content .comp_dev .progILL {
+  display: inline-block;
+  width: 35%;
+}
+
+#competences .competences_content .comp_dev .progIND {
+  display: inline-block;
+  width: 40%;
+}
+
+#competences .competences_content .comp_dev .progXD {
+  display: inline-block;
+  width: 30%;
+}
+
+@media screen and (min-width: 800px) {
+  #competences .competences_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #competences .competences_content .comp_domaine {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+  }
+  #competences .competences_content .comp_domaine ul {
+    padding: 0 0 0 4em;
+  }
+  #competences .competences_content .comp_domaine ul::before {
+    content: "√";
+    color: #5ae779;
+    display: inline-block;
+    position: absolute;
+    left: 45px;
+  }
+  #competences .competences_content .comp_dev {
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+  }
+}
+
+#portfolio {
+  padding-top: 3em;
+  background: #fff;
+}
+
+#portfolio .portfolio_content {
+  padding: 0.5em;
+}
+
+#portfolio .portfolio_content .card {
+  width: 95%;
+  margin: auto;
+  background: #dbdbdb;
+  padding: 5px;
+  margin: 0 auto 50px auto;
+  border-radius: 3px;
+}
+
+#portfolio .portfolio_content .card img {
+  width: 100%;
+}
+
+#portfolio .portfolio_content .card h5:first-child {
+  color: #aaaaaa;
+}
+
+#portfolio .portfolio_content .card h5:last-child {
+  color: #f05454;
+  font-size: 0.7em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 800px) {
+  #portfolio .portfolio_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #portfolio .portfolio_content .card {
+    max-width: 600px;
+  }
+}
+
+#about .about_content {
+  width: 100%;
+  padding: 5px;
+}
+
+#about .about_content .bloc h2 {
+  margin: 1em auto;
+}
+
+#about .about_content .bloc p {
+  text-align: justify;
+}
+
+#about .about_content .img {
+  width: 100%;
+  max-width: 650px;
+  margin: 10px auto;
+}
+
+#about .about_content .img img {
+  width: 90%;
+  margin: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  #about .about_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 3em;
+  }
+  #about .about_content .bloc {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  #about .about_content .img {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+  }
+}
+/*# sourceMappingURL=app.css.map */
