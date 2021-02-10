@@ -1,71 +1,45 @@
-
-.menuHamburger{
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    background: $lightgrey;
-}
-
 #bg_container{
 	background: center / cover fixed no-repeat url("../img/23964bw.jpg");
 }
 
-.vh {
-	width: 100%;
-    overflow: hidden;
-    padding: 1em;
-	
-	.vh_content {
-		width: 70%;
-		margin: auto;
-		color: $white;
-		font-size: 1.5em;
-		text-align: center;
-		text-transform: uppercase;
+#vh{
+  height: 100vh;
+  background: $grey;
+  text-align: center;
+  position: relative;
+  font-family: "source sans pro";
 
-		.circle{
-			position: relative;
-			width: 150px;
-			height: 150px;
-			background: #eee;
-			border-radius: 50%;
-			margin: 10px auto;
-			
-			border: 5px solid $white;
-			background: $red;
+  .vh_container{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-			.avatar{
-				position: absolute;
-				width: 80%;
-				height: 80%;
-				background: center / contain no-repeat url(../img/panda.png);
-				left: 50%;
-				top: 50%;
+    h1{
+      width: 100%;
+      font-weight: 600;
+      font-size: 6rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 1em;
+      color: $ultralightgrey;
+    }
+    h2{
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: $white;
 
-				transform: translate(-50%, -50%);
-			}
-		}
+      span{
+        color: $black;
+      }
+    }
+  }
 
-		.description{
-			text-align: left;
-			letter-spacing: 0;
-            text-transform: none;
-            
-            p{
-                font-family: font-manuscrite, "sans serif";
-                text-align: center;
-                line-height: 1.2em;
-            }
-
-			em{
-				color: $red;
-			}
-		}
-	}	
 }
 
 #services {
-
     .services_content{
         width: 95%;
         margin: auto;
@@ -126,7 +100,7 @@
 
 #competences{
   background: $white;
-  padding-top: 3em;
+  margin-top: 200px;
 
   .competences_content{
 
@@ -240,9 +214,16 @@
       }
       .comp_dev{
         flex: 3;
-      }
+
+        .progressBarList {
+
+          .progressBar {
+            margin: 1.5em;
+          }
+        }
     }
   }
+}
 }
 
 #portfolio{
@@ -250,6 +231,90 @@
   background: $white;
 
   .portfolio_content{
+    .card{
+      width: 100%;
+      height: 300px;
+      margin: 20px 0;
+      overflow: hidden;
+      transition: 1.5s;
+      
+      &:nth-child(odd){
+        background: $lightgrey;
+      }
+      &:nth-child(even){
+        background: $ultralightgrey;
+      }    
+
+      &_descriptif_right{
+        width: 100%;
+        height: 100%;
+        background: $red;
+        opacity: 0.8;
+        transform: translate(-80%);
+        transition: 1.5s;
+        clip-path: polygon(0% 0%, 75% 0%, 90% 50%, 75% 100%, 0% 100%);
+
+        &:hover{
+          transform: translateX(-10%);
+          clip-path: polygon(0% 0%, 100% 0, 87% 52%, 75% 100%, 0% 100%);
+
+        }
+
+        h3{
+          color: $white;
+          margin: auto;
+          width: 60%;
+          padding: 1em;
+          font-weight: 600;
+          font-size: 2em;
+        }
+
+        p{
+          width: 60%;
+          margin: auto;
+          padding: 3em;
+          text-align:left;
+          color: $white;
+        }
+      }
+      &_descriptif_left{
+        width: 100%;
+        height: 100%;
+        background: $red;
+        opacity: 0.8;
+        transform: translate(80%);
+        transition: 1.5s;
+        clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 10% 50%);
+
+
+        &:hover{
+          transform: translateX(10%);
+          clip-path: polygon(0 0, 100% 0%, 100% 100%, 25% 100%, 13% 52%);
+        }
+
+        h3{
+          color: $white;
+          margin: auto;
+          width: 60%;
+          padding: 1em;
+          font-weight: 600;
+          font-size: 2em;
+        }
+
+        p{
+          width: 60%;
+          margin: auto;
+          padding: 3em;
+          text-align:left;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+
+  /* .portfolio_content{
     padding: 0.5em;
 
     .card{
@@ -274,18 +339,8 @@
         text-transform: uppercase;
       }
     }
-  }
+  } */
 
-  @media screen and (min-width: 800px){
-    .portfolio_content{
-      display: flex;
-      flex-wrap: wrap;
-      .card{
-        max-width: 600px;
-      }
-    }
-  }
-}
 
 #about{
   .about_content{
@@ -330,5 +385,3 @@
   }
 
 }
-
-

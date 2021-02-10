@@ -1,6 +1,17 @@
 @font-face{
-    font-family: "font-manuscrite";
-    src: url(../fonts/Handlee-Regular.ttf);
+    font-family: "source sans pro";
+    font-weight: 200;
+    src: url(../fonts/source_sans_pro/SourceSansPro-Light.ttf)
+}
+@font-face{
+    font-family: "source sans pro";
+    font-weight: 400;
+    src: url(../fonts/source_sans_pro/SourceSansPro-Regular.ttf)
+}
+@font-face{
+    font-family: "source sans pro";
+    font-weight: 600;
+    src: url(../fonts/source_sans_pro/SourceSansPro-Bold.ttf)
 }
 @font-face{
     font-family: "font-principal";
@@ -40,7 +51,8 @@ li{
 }
 
 .separation{
-    background: center / cover fixed url(../img/bg_01.jpg);   
+    background: center / cover fixed url(../img/bg_01.jpg); 
+    padding: 3em;  
 
     
 	.bandeau {
@@ -51,26 +63,25 @@ li{
             margin: 1em auto;
             text-align: center;
             color: $white;
-            font-size: 0.5em;
+            font-size: 1em;
             text-transform: uppercase;
         }
         h3 {
             margin: 1em auto;
             text-align: center;
-            font-size: 1em;
+            font-size: 1.5em;
             color: $white;
         }
         h2 {
             margin: 1em auto;
-            font-size: 1.5rem;
+            font-size: 2.5rem;
             text-align: center;
             color: $white;
         }
 
 		.devices {
             position: absolute;
-			bottom: -50px;
-			width: 200px;
+			width: 500px;
 			left: 50%;
 			transform: translateX(-50%);
 			display: block;
@@ -89,8 +100,8 @@ li{
 		.whoiam{
             display: block;
 			margin: auto;
-			width: 150px;
-			transform: translateY(13%);
+			width: 250px;
+			transform: translateY(30%);
 		}
 	}
 }
