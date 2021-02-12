@@ -37,10 +37,21 @@
       }
     }
   }
-
+  @media screen and (max-width: 450px){
+    .vh_container{
+      h1{
+      font-size: 3rem;
+      }
+      h2{
+        font-size: 1rem;
+      }
+    }
+  }
 }
 
 #services {
+  padding-top: 100px;
+
   h2{
     margin-top: 0;
   }
@@ -89,18 +100,6 @@
           }
         }
     }
-
-
-    /* .icon {
-        width: 55px;
-        height: 55px;
-        display: inline-block;
-        background: center / cover url(../img/iconPlus.png);
-
-        @media screen and ( max-width: 1360px ){
-            visibility: hidden;;
-        }
-    } */
 }
 
 #competences{
@@ -214,7 +213,7 @@
           display: inline-block;
           position: absolute;
           left: 45px
-      }
+          }
         }
       }
       .comp_dev{
@@ -226,9 +225,13 @@
             margin: 1.5em;
           }
         }
+      }
     }
   }
-}
+
+  @media screen and (max-width: 530px) {
+    margin-top: 5em;
+  }
 }
 
 #portfolio{
@@ -394,6 +397,7 @@
 
       p{
         text-align: justify;
+        margin: 0 2em;
       }
 
     }

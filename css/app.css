@@ -105,7 +105,7 @@ li {
   position: absolute;
   width: 500px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -35%);
   display: block;
   margin: auto;
 }
@@ -127,6 +127,30 @@ li {
   margin: auto;
   width: 250px;
   transform: translateY(30%);
+}
+
+@media screen and (max-width: 530px) {
+  .separation .bandeau .whoiam {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .separation {
+    padding: 1em;
+  }
+  .separation .bandeau .devices {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .separation .bandeau h2 {
+    font-size: 1.4rem;
+  }
+  .separation .bandeau h3 {
+    font-size: 1rem;
+  }
 }
 
 #bg_container {
@@ -170,17 +194,17 @@ li {
   color: #000;
 }
 
-#services {
-  /* .icon {
-        width: 55px;
-        height: 55px;
-        display: inline-block;
-        background: center / cover url(../img/iconPlus.png);
+@media screen and (max-width: 450px) {
+  #vh .vh_container h1 {
+    font-size: 3rem;
+  }
+  #vh .vh_container h2 {
+    font-size: 1rem;
+  }
+}
 
-        @media screen and ( max-width: 1360px ){
-            visibility: hidden;;
-        }
-    } */
+#services {
+  padding-top: 100px;
 }
 
 #services h2 {
@@ -342,6 +366,12 @@ li {
   }
   #competences .competences_content .comp_dev .progressBarList .progressBar {
     margin: 1.5em;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  #competences {
+    margin-top: 5em;
   }
 }
 
@@ -517,6 +547,7 @@ li {
 
 #about .about_content .bloc p {
   text-align: justify;
+  margin: 0 2em;
 }
 
 #about .about_content .img {
