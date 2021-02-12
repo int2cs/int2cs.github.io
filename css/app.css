@@ -1,0 +1,546 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "source sans pro";
+  font-weight: 200;
+  src: url(../fonts/source_sans_pro/SourceSansPro-Light.ttf);
+}
+
+@font-face {
+  font-family: "source sans pro";
+  font-weight: 400;
+  src: url(../fonts/source_sans_pro/SourceSansPro-Regular.ttf);
+}
+
+@font-face {
+  font-family: "source sans pro";
+  font-weight: 600;
+  src: url(../fonts/source_sans_pro/SourceSansPro-Bold.ttf);
+}
+
+@font-face {
+  font-family: "font-principal";
+  src: url(../fonts/Nunito-Regular.ttf);
+  font-weight: normal;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: font-principal, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+main {
+  max-width: 1240px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 350px #d4d4d4;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+.titre {
+  margin-bottom: 2em;
+}
+
+.titre h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0.5em auto;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.titre h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0.5em auto;
+  color: #838383;
+  text-transform: uppercase;
+}
+
+.separation {
+  background: center/cover fixed url(../img/bg_01.jpg);
+  padding: 3em;
+}
+
+.separation .bandeau {
+  position: relative;
+  padding: 1em;
+}
+
+.separation .bandeau h4 {
+  margin: 1em auto;
+  text-align: center;
+  color: #fff;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.separation .bandeau h3 {
+  margin: 1em auto;
+  text-align: center;
+  font-size: 1.5em;
+  color: #fff;
+}
+
+.separation .bandeau h2 {
+  margin: 1em auto;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #fff;
+}
+
+.separation .bandeau .devices {
+  position: absolute;
+  width: 500px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  margin: auto;
+}
+
+.separation .bandeau .logoCampus {
+  display: block;
+  width: 220px;
+  margin: 1em auto;
+}
+
+@media screen and (min-width: 800px) {
+  .separation .bandeau .logoCampus {
+    width: 300px;
+  }
+}
+
+.separation .bandeau .whoiam {
+  display: block;
+  margin: auto;
+  width: 250px;
+  transform: translateY(30%);
+}
+
+#bg_container {
+  background: center/cover fixed no-repeat url("../img/23964bw.jpg");
+}
+
+#vh {
+  height: 100vh;
+  background: center/cover fixed no-repeat url("../img/bg2.jpg");
+  text-align: center;
+  position: relative;
+  font-family: "source sans pro";
+}
+
+#vh .vh_container {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#vh .vh_container h1 {
+  width: 100%;
+  font-weight: 600;
+  font-size: 6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  color: #fff;
+}
+
+#vh .vh_container h2 {
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+#vh .vh_container h2 span {
+  color: #000;
+}
+
+#services {
+  /* .icon {
+        width: 55px;
+        height: 55px;
+        display: inline-block;
+        background: center / cover url(../img/iconPlus.png);
+
+        @media screen and ( max-width: 1360px ){
+            visibility: hidden;;
+        }
+    } */
+}
+
+#services h2 {
+  margin-top: 0;
+}
+
+#services .services_content {
+  width: 95%;
+  margin: auto;
+}
+
+#services .services_content ul {
+  padding: 0;
+  margin: 1.5em 0;
+}
+
+#services .services_content ul:nth-child(2n+2) {
+  text-align: right;
+}
+
+#services .services_content ul li:first-child {
+  color: red;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 800px) {
+  #services .services_content {
+    width: 95%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #services .services_content ul {
+    width: 350px;
+  }
+  #services .services_content ul li {
+    width: 300px;
+  }
+  #services .services_content .services_content_bloc_1 ul {
+    text-align: right;
+  }
+  #services .services_content .services_content_bloc_2 ul {
+    text-align: left;
+  }
+}
+
+#competences {
+  background: #fff;
+  margin-top: 200px;
+}
+
+#competences .competences_content .comp_domaine h3 {
+  margin-left: 1em;
+}
+
+#competences .competences_content .comp_domaine ul {
+  position: relative;
+  padding: 0;
+  margin: 2em;
+}
+
+#competences .competences_content .comp_domaine ul li:first-child {
+  color: red;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#competences .competences_content .comp_domaine ul li:last-child {
+  color: #aaaaaa;
+}
+
+@media screen and (min-width: 800px) {
+  #competences .competences_content .comp_domaine ul {
+    margin: 1em;
+  }
+}
+
+#competences .competences_content .comp_dev h3 {
+  margin-left: 1em;
+}
+
+#competences .competences_content .comp_dev .progressBarList {
+  padding: 0.5em;
+}
+
+#competences .competences_content .comp_dev .progressBarList .progressBar {
+  color: #fff;
+  background: #dbdbdb;
+  margin: 0.5em;
+}
+
+#competences .competences_content .comp_dev .progressBarList .progressBar > span {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  background: #f05454;
+  padding: 3px 10px;
+}
+
+#competences .competences_content .comp_dev .progHTML {
+  display: inline-block;
+  width: 80%;
+}
+
+#competences .competences_content .comp_dev .progPHP {
+  display: inline-block;
+  width: 30%;
+}
+
+#competences .competences_content .comp_dev .progJS {
+  display: inline-block;
+  width: 50%;
+}
+
+#competences .competences_content .comp_dev .progSQL {
+  display: inline-block;
+  width: 30%;
+}
+
+#competences .competences_content .comp_dev .progPS {
+  display: inline-block;
+  width: 35%;
+}
+
+#competences .competences_content .comp_dev .progILL {
+  display: inline-block;
+  width: 35%;
+}
+
+#competences .competences_content .comp_dev .progIND {
+  display: inline-block;
+  width: 40%;
+}
+
+#competences .competences_content .comp_dev .progXD {
+  display: inline-block;
+  width: 30%;
+}
+
+@media screen and (min-width: 800px) {
+  #competences .competences_content {
+    display: flex;
+    justify-content: center;
+  }
+  #competences .competences_content .comp_domaine {
+    flex: 2;
+  }
+  #competences .competences_content .comp_domaine ul {
+    padding: 0 0 0 4em;
+  }
+  #competences .competences_content .comp_domaine ul::before {
+    content: "√";
+    color: #5ae779;
+    display: inline-block;
+    position: absolute;
+    left: 45px;
+  }
+  #competences .competences_content .comp_dev {
+    flex: 3;
+  }
+  #competences .competences_content .comp_dev .progressBarList .progressBar {
+    margin: 1.5em;
+  }
+}
+
+#portfolio {
+  padding-top: 3em;
+  background: #fff;
+}
+
+#portfolio .portfolio_content {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+#portfolio .portfolio_content .card {
+  width: 100%;
+  height: 200px;
+  margin: 20px 0;
+  overflow: hidden;
+  filter: grayscale(80%);
+  transition: 1s;
+}
+
+#portfolio .portfolio_content .card:hover {
+  height: 600px;
+  filter: grayscale(0);
+}
+
+#portfolio .portfolio_content .card:hover .cursor {
+  visibility: visible;
+}
+
+#portfolio .portfolio_content .card:hover .card_descriptif {
+  visibility: visible;
+}
+
+#portfolio .portfolio_content .card:nth-child(odd) {
+  background: #aaaaaa;
+}
+
+#portfolio .portfolio_content .card:nth-child(even) {
+  background: #dbdbdb;
+}
+
+#portfolio .portfolio_content .card_descriptif {
+  visibility: hidden;
+}
+
+#portfolio .portfolio_content .card_descriptif_right {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #f05454;
+  opacity: 0.95;
+  transform: translate(-80%);
+  transition: 1s;
+  clip-path: polygon(0% 0%, 75% 0%, 90% 50%, 75% 100%, 0% 100%);
+}
+
+#portfolio .portfolio_content .card_descriptif_right:hover {
+  transform: translateX(-10%);
+  clip-path: polygon(0% 0%, 100% 0, 87% 52%, 75% 100%, 0% 100%);
+}
+
+#portfolio .portfolio_content .card_descriptif_right:hover .cursor {
+  visibility: hidden;
+}
+
+#portfolio .portfolio_content .card_descriptif_right h3 {
+  color: #fff;
+  margin: auto;
+  width: 60%;
+  padding: 1em;
+  font-weight: 600;
+  font-size: 2em;
+}
+
+#portfolio .portfolio_content .card_descriptif_right p {
+  width: 60%;
+  margin: auto;
+  padding: 3em;
+  text-align: left;
+  color: #fff;
+}
+
+#portfolio .portfolio_content .card_descriptif_right .cursor {
+  visibility: hidden;
+  object-fit: center/cover;
+  width: 20px;
+  height: 20px;
+  opacity: 0.8;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 180px;
+}
+
+#portfolio .portfolio_content .card_descriptif_left {
+  width: 100%;
+  height: 100%;
+  background: #f05454;
+  opacity: 0.95;
+  transform: translate(80%);
+  transition: 1.5s;
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 10% 50%);
+}
+
+#portfolio .portfolio_content .card_descriptif_left:hover {
+  transform: translateX(10%);
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 25% 100%, 13% 52%);
+}
+
+#portfolio .portfolio_content .card_descriptif_left:hover .cursor {
+  visibility: hidden;
+}
+
+#portfolio .portfolio_content .card_descriptif_left h3 {
+  color: #fff;
+  margin: auto;
+  width: 60%;
+  padding: 1em;
+  font-weight: 600;
+  font-size: 2em;
+}
+
+#portfolio .portfolio_content .card_descriptif_left p {
+  width: 60%;
+  margin: auto;
+  padding: 3em;
+  text-align: left;
+  color: #fff;
+}
+
+#portfolio .portfolio_content .card_descriptif_left .cursor {
+  visibility: hidden;
+  object-fit: center/cover;
+  width: 20px;
+  height: 20px;
+  opacity: 0.8;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 180px;
+}
+
+#portfolio .portfolio_content .projetBlog {
+  background: center/cover url("../img/sites/blog-min.jpg") !important;
+}
+
+#portfolio .portfolio_content .projetSocial {
+  background: center/cover url("../img/sites/social-min.jpg") !important;
+}
+
+#portfolio .portfolio_content .projetAnda {
+  background: center/cover url("../img/sites/anda-min.jpg") !important;
+}
+
+#portfolio .portfolio_content .projetMontain {
+  background: center/cover url("../img/sites/montainView.jpg") !important;
+}
+
+#portfolio .portfolio_content .projetGaming {
+  background: center/cover url("../img/sites/GamingCampus.jpg") !important;
+}
+
+#about .about_content {
+  width: 100%;
+  padding: 5px;
+}
+
+#about .about_content .bloc h2 {
+  margin: 1em auto;
+}
+
+#about .about_content .bloc p {
+  text-align: justify;
+}
+
+#about .about_content .img {
+  width: 100%;
+  max-width: 650px;
+  margin: 10px auto;
+}
+
+#about .about_content .img img {
+  width: 90%;
+  margin: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  #about .about_content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3em;
+  }
+  #about .about_content .bloc {
+    flex: 1;
+  }
+  #about .about_content .img {
+    flex: 2;
+  }
+}
+/*# sourceMappingURL=app.css.map */
