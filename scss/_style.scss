@@ -4,7 +4,8 @@
 
 #vh{
   height: 100vh;
-  background: $grey;
+  // background: $grey;
+  background: center / cover fixed no-repeat url("../img/bg2.jpg");
   text-align: center;
   position: relative;
   font-family: "source sans pro";
@@ -23,7 +24,7 @@
       letter-spacing: 0.1em;
       text-transform: uppercase;
       margin-bottom: 1em;
-      color: $ultralightgrey;
+      color: $white;
     }
     h2{
       font-weight: 400;
@@ -40,9 +41,13 @@
 }
 
 #services {
+  h2{
+    margin-top: 0;
+  }
     .services_content{
         width: 95%;
         margin: auto;
+
 
         ul{
           padding: 0;
@@ -231,33 +236,56 @@
   background: $white;
 
   .portfolio_content{
+    display: flex;
+    flex-direction: column-reverse;
     .card{
       width: 100%;
-      height: 300px;
+      height: 200px;
       margin: 20px 0;
       overflow: hidden;
-      transition: 1.5s;
+      filter: grayscale(80%);
+      transition: 1s;
+
+      &:hover{
+        height: 600px;
+        filter: grayscale(0);
+
+        .cursor{
+          visibility: visible;
+        }
+      }
+      &:hover .card_descriptif{
+        visibility: visible;
+      }
       
       &:nth-child(odd){
         background: $lightgrey;
       }
       &:nth-child(even){
         background: $ultralightgrey;
-      }    
+      }   
+      
+      &_descriptif{
+        visibility: hidden;
+      }
+
 
       &_descriptif_right{
+        position: relative;
         width: 100%;
         height: 100%;
         background: $red;
-        opacity: 0.8;
+        opacity: 0.95;
         transform: translate(-80%);
-        transition: 1.5s;
+        transition: 1s;
         clip-path: polygon(0% 0%, 75% 0%, 90% 50%, 75% 100%, 0% 100%);
 
         &:hover{
           transform: translateX(-10%);
           clip-path: polygon(0% 0%, 100% 0, 87% 52%, 75% 100%, 0% 100%);
-
+        }
+        &:hover .cursor{
+          visibility: hidden;
         }
 
         h3{
@@ -268,7 +296,6 @@
           font-weight: 600;
           font-size: 2em;
         }
-
         p{
           width: 60%;
           margin: auto;
@@ -276,12 +303,23 @@
           text-align:left;
           color: $white;
         }
+        .cursor{
+          visibility: hidden;
+          object-fit: center/cover;
+          width: 20px;
+          height: 20px;
+          opacity: 0.8;
+          position: absolute;
+          top:50%;
+          transform: translateY(-50%);
+          right: 180px;
+        }
       }
       &_descriptif_left{
         width: 100%;
         height: 100%;
         background: $red;
-        opacity: 0.8;
+        opacity: 0.95;
         transform: translate(80%);
         transition: 1.5s;
         clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 10% 50%);
@@ -291,6 +329,9 @@
           transform: translateX(10%);
           clip-path: polygon(0 0, 100% 0%, 100% 100%, 25% 100%, 13% 52%);
         }
+        &:hover .cursor{
+          visibility: hidden;
+        }
 
         h3{
           color: $white;
@@ -308,39 +349,38 @@
           text-align:left;
           color: $white;
         }
+
+        .cursor{
+          visibility: hidden;
+          object-fit: center/cover;
+          width: 20px;
+          height: 20px;
+          opacity: 0.8;
+          position: absolute;
+          top:50%;
+          transform: translateY(-50%);
+          left: 180px;
+        }
       }
+    }
+
+    .projetBlog{
+      background: center/cover url("../img/sites/blog-min.jpg")!important;
+    }
+    .projetSocial{
+      background: center/cover url("../img/sites/social-min.jpg")!important;
+    }
+    .projetAnda{
+      background: center/cover url("../img/sites/anda-min.jpg")!important;
+    }
+    .projetMontain{
+      background: center/cover url("../img/sites/montainView.jpg")!important;
+    }
+    .projetGaming{
+      background: center/cover url("../img/sites/GamingCampus.jpg")!important;
     }
   }
 }
-
-
-  /* .portfolio_content{
-    padding: 0.5em;
-
-    .card{
-      width: 95%;
-      margin: auto;
-      background: $ultralightgrey;
-      padding: 5px;
-      margin: 0 auto 50px auto;
-      border-radius: 3px;
-
-      img{
-        width: 100%;
-      }
-
-      h5:first-child{
-        color: $lightgrey;
-      }
-      h5:last-child{
-        color: $red;
-        font-size: 0.7em;
-        text-align: center;
-        text-transform: uppercase;
-      }
-    }
-  } */
-
 
 #about{
   .about_content{
