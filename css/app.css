@@ -387,6 +387,8 @@ li {
 }
 
 #portfolio .portfolio_content {
+  position: relative;
+  z-index: 0;
   display: flex;
   flex-direction: column-reverse;
 }
@@ -407,6 +409,12 @@ li {
 
 #portfolio .portfolio_content .card:hover .cursor {
   visibility: visible;
+}
+
+@media screen and (max-width: 1200px) {
+  #portfolio .portfolio_content .card:hover {
+    height: 400px;
+  }
 }
 
 #portfolio .portfolio_content .card:hover .card_descriptif {
@@ -471,7 +479,13 @@ li {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: 180px;
+  right: 15%;
+}
+
+@media screen and (max-width: 500px) {
+  #portfolio .portfolio_content .card_descriptif_right .cursor {
+    right: 14%;
+  }
 }
 
 #portfolio .portfolio_content .card_descriptif_left {
@@ -512,14 +526,21 @@ li {
 
 #portfolio .portfolio_content .card_descriptif_left .cursor {
   visibility: hidden;
-  object-fit: center/cover;
+  object-fit: cover;
   width: 20px;
   height: 20px;
   opacity: 0.8;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 180px;
+  transform: scale(-1, 1);
+  left: 15%;
+}
+
+@media screen and (max-width: 500px) {
+  #portfolio .portfolio_content .card_descriptif_left .cursor {
+    left: 14%;
+  }
 }
 
 #portfolio .portfolio_content .projetBlog {
@@ -542,9 +563,30 @@ li {
   background: center/cover url("../img/sites/GamingCampus.jpg") !important;
 }
 
+@media screen and (max-width: 500px) {
+  #portfolio .portfolio_content .card:last-child {
+    position: relative;
+    z-index: 0;
+  }
+  #portfolio .portfolio_content .card:last-child:hover::after {
+    display: none;
+  }
+  #portfolio .portfolio_content .card:last-child::after {
+    content: "";
+    position: absolute;
+    z-index: 100;
+    width: 40px;
+    height: 40px;
+    top: 10%;
+    right: 14%;
+    background: center no-repeat url("../img/tap.svg");
+    transform: rotate(-10deg);
+  }
+}
+
 #about .about_content {
   width: 100%;
-  padding: 5px;
+  padding: 2em;
 }
 
 #about .about_content .bloc h2 {
@@ -553,7 +595,6 @@ li {
 
 #about .about_content .bloc p {
   text-align: justify;
-  margin: 0 2em;
 }
 
 #about .about_content .img {
@@ -578,6 +619,15 @@ li {
   }
   #about .about_content .img {
     flex: 2;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #about .about_content {
+    padding: 1em 2em;
+  }
+  #about .about_content .bloc h2 {
+    font-size: 1.3rem;
   }
 }
 /*# sourceMappingURL=app.css.map */
