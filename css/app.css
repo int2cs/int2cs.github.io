@@ -159,7 +159,7 @@ li {
 
 #vh {
   height: 100vh;
-  background: center/cover fixed no-repeat url("../img/bg2.jpg");
+  background: center/cover fixed url("../img/bg2.jpg");
   text-align: center;
   position: relative;
   font-family: "source sans pro";
@@ -192,6 +192,12 @@ li {
 
 #vh .vh_container h2 span {
   color: #000;
+}
+
+@media screen and (max-width: 500px) {
+  #vh {
+    background: center/cover url("../img/bg2.jpg");
+  }
 }
 
 @media screen and (max-width: 450px) {
