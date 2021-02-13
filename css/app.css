@@ -428,11 +428,28 @@ li {
 
 #portfolio .portfolio_content .card_descriptif {
   visibility: hidden;
+  padding-top: 10px;
 }
 
 #portfolio .portfolio_content .card_descriptif h2 {
+  width: 50%;
+  margin: 1em auto 1em auto;
+}
+
+#portfolio .portfolio_content .card_descriptif h3 {
+  color: #000;
+  margin: auto;
   width: 60%;
-  margin: 2em auto 1em auto;
+  padding: 1em;
+  font-weight: 600;
+}
+
+#portfolio .portfolio_content .card_descriptif p {
+  width: 60%;
+  margin: auto;
+  padding: 1em;
+  text-align: left;
+  color: #fff;
 }
 
 #portfolio .portfolio_content .card_descriptif a {
@@ -448,6 +465,7 @@ li {
 
 #portfolio .portfolio_content .card_descriptif ul:last-child {
   display: flex;
+  width: 60%;
 }
 
 #portfolio .portfolio_content .card_descriptif ul li {
@@ -456,6 +474,77 @@ li {
 
 #portfolio .portfolio_content .card_descriptif ul li img {
   height: 90px;
+}
+
+#portfolio .portfolio_content .card_descriptif ul li button {
+  outline: none;
+  color: #fff;
+  background: #dbdbdb;
+  padding: 0.5em 2em;
+  border: none;
+  border-radius: 30px;
+}
+
+#portfolio .portfolio_content .card_descriptif ul li button:hover {
+  cursor: pointer;
+}
+
+#portfolio .portfolio_content .card_descriptif ul li button:focus {
+  background: #aaaaaa;
+}
+
+@media screen and (max-width: 1200px) {
+  #portfolio .portfolio_content .card_descriptif > * {
+    margin: 0.05em auto !important;
+  }
+  #portfolio .portfolio_content .card_descriptif ul li img {
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  #portfolio .portfolio_content .card_descriptif h2 {
+    margin: 1em auto;
+  }
+  #portfolio .portfolio_content .card_descriptif p {
+    padding: 0;
+  }
+  #portfolio .portfolio_content .card_descriptif ul:last-child {
+    padding: 0;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  #portfolio .portfolio_content .card_descriptif ul:last-child li {
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #portfolio .portfolio_content .card_descriptif h2 {
+    margin: 0.5em auto;
+  }
+  #portfolio .portfolio_content .card_descriptif ul li img {
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #portfolio .portfolio_content .card_descriptif h2 {
+    margin: 1em auto !important;
+  }
+  #portfolio .portfolio_content .card_descriptif p {
+    text-align: justify;
+    font-size: 0.8em;
+  }
+  #portfolio .portfolio_content .card_descriptif ul {
+    width: 88%;
+    margin: 3em !important;
+    font-size: 0.8em;
+  }
+  #portfolio .portfolio_content .card_descriptif .lang {
+    display: none;
+  }
 }
 
 #portfolio .portfolio_content .card_descriptif_right {
@@ -476,23 +565,6 @@ li {
 
 #portfolio .portfolio_content .card_descriptif_right:hover .cursor {
   visibility: hidden;
-}
-
-#portfolio .portfolio_content .card_descriptif_right h3 {
-  color: #fff;
-  margin: auto;
-  width: 60%;
-  padding: 1em;
-  font-weight: 600;
-  font-size: 2em;
-}
-
-#portfolio .portfolio_content .card_descriptif_right p {
-  width: 60%;
-  margin: auto;
-  padding: 1em;
-  text-align: left;
-  color: #fff;
 }
 
 #portfolio .portfolio_content .card_descriptif_right .cursor {
@@ -530,23 +602,6 @@ li {
 
 #portfolio .portfolio_content .card_descriptif_left:hover .cursor {
   visibility: hidden;
-}
-
-#portfolio .portfolio_content .card_descriptif_left h3 {
-  color: #fff;
-  margin: auto;
-  width: 60%;
-  padding: 1em;
-  font-weight: 600;
-  font-size: 2em;
-}
-
-#portfolio .portfolio_content .card_descriptif_left p {
-  width: 60%;
-  margin: auto;
-  padding: 1em;
-  text-align: left;
-  color: #fff;
 }
 
 #portfolio .portfolio_content .card_descriptif_left .cursor {
