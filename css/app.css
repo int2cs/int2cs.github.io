@@ -153,13 +153,10 @@ li {
   }
 }
 
-#bg_container {
-  background: center/cover fixed no-repeat url("../img/23964bw.jpg");
-}
-
 #vh {
   height: 100vh;
-  background: center/cover fixed url("../img/bg2.jpg");
+  background: #838383;
+  background: center/cover fixed url("../img/bg2-min.jpg");
   text-align: center;
   position: relative;
   font-family: "source sans pro";
@@ -433,6 +430,34 @@ li {
   visibility: hidden;
 }
 
+#portfolio .portfolio_content .card_descriptif h2 {
+  width: 60%;
+  margin: 2em auto 1em auto;
+}
+
+#portfolio .portfolio_content .card_descriptif a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+#portfolio .portfolio_content .card_descriptif ul {
+  width: 60%;
+  display: block;
+  margin: auto;
+}
+
+#portfolio .portfolio_content .card_descriptif ul:last-child {
+  display: flex;
+}
+
+#portfolio .portfolio_content .card_descriptif ul li {
+  margin: 1em;
+}
+
+#portfolio .portfolio_content .card_descriptif ul li img {
+  height: 90px;
+}
+
 #portfolio .portfolio_content .card_descriptif_right {
   position: relative;
   width: 100%;
@@ -465,7 +490,7 @@ li {
 #portfolio .portfolio_content .card_descriptif_right p {
   width: 60%;
   margin: auto;
-  padding: 3em;
+  padding: 1em;
   text-align: left;
   color: #fff;
 }
@@ -519,7 +544,7 @@ li {
 #portfolio .portfolio_content .card_descriptif_left p {
   width: 60%;
   margin: auto;
-  padding: 3em;
+  padding: 1em;
   text-align: left;
   color: #fff;
 }
@@ -551,16 +576,20 @@ li {
   background: center/cover url("../img/sites/social-min.jpg") !important;
 }
 
+#portfolio .portfolio_content .projetRun {
+  background: center/cover url("../img/sites/run.jpg") !important;
+}
+
 #portfolio .portfolio_content .projetAnda {
   background: center/cover url("../img/sites/anda-min.jpg") !important;
 }
 
 #portfolio .portfolio_content .projetMontain {
-  background: center/cover url("../img/sites/montainView.jpg") !important;
+  background: center/cover url("../img/sites/montainView-min.jpg") !important;
 }
 
 #portfolio .portfolio_content .projetGaming {
-  background: center/cover url("../img/sites/GamingCampus.jpg") !important;
+  background: center/cover url("../img/sites/GamingCampus-min.jpg") !important;
 }
 
 @media screen and (max-width: 500px) {

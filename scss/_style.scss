@@ -1,11 +1,7 @@
-#bg_container{
-	background: center / cover fixed no-repeat url("../img/23964bw.jpg");
-}
-
 #vh{
   height: 100vh;
-  // background: $grey;
-  background: center / cover fixed url("../img/bg2.jpg");
+  background: $grey; // Si le background ne s'affiche pas
+  background: center / cover fixed url("../img/bg2-min.jpg");
   text-align: center;
   position: relative;
   font-family: "source sans pro";
@@ -280,8 +276,32 @@
       
       &_descriptif{
         visibility: hidden;
-      }
+        
+        h2{
+          width: 60%;
+          margin: 2em auto 1em auto;
+        }
+        a{
+          color: $white;
+          text-decoration: underline;
+        }
+        ul{
+          width: 60%;
+          display: block;
+          margin: auto;
+          
+          &:last-child{
+            display: flex;
+          }
 
+          li{
+            margin: 1em;
+            img{
+              height: 90px;
+            }
+          }
+        }
+      }
 
       &_descriptif_right{
         position: relative;
@@ -312,7 +332,7 @@
         p{
           width: 60%;
           margin: auto;
-          padding: 3em;
+          padding: 1em;
           text-align:left;
           color: $white;
         }
@@ -362,7 +382,7 @@
         p{
           width: 60%;
           margin: auto;
-          padding: 3em;
+          padding: 1em;
           text-align:left;
           color: $white;
         }
@@ -394,14 +414,17 @@
     .projetSocial{
       background: center/cover url("../img/sites/social-min.jpg")!important;
     }
+    .projetRun{
+      background: center/cover url("../img/sites/run.jpg")!important;
+    }
     .projetAnda{
       background: center/cover url("../img/sites/anda-min.jpg")!important;
     }
     .projetMontain{
-      background: center/cover url("../img/sites/montainView.jpg")!important;
+      background: center/cover url("../img/sites/montainView-min.jpg")!important;
     }
     .projetGaming{
-      background: center/cover url("../img/sites/GamingCampus.jpg")!important;
+      background: center/cover url("../img/sites/GamingCampus-min.jpg")!important;
     }
 
     @media screen and (max-width: 500px) {
