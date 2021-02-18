@@ -194,7 +194,7 @@ li {
 
 @media screen and (max-width: 500px) {
   #vh {
-    background: center/cover url("../img/bg2.jpg");
+    background: center/cover url("../img/bg2-min.jpg");
   }
 }
 
@@ -749,6 +749,10 @@ footer .arrowUp {
 
 #footer .bloc:first-child {
   border-right: 1px solid #838383;
+}
+
+#footer .bloc p a {
+  text-decoration: underline;
 }
 
 #footer .bloc ul li {

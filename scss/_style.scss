@@ -34,7 +34,7 @@
     }
   }
   @media screen and (max-width: 500px){
-    background: center / cover url("../img/bg2.jpg");;
+    background: center / cover url("../img/bg2-min.jpg");;
   }
   @media screen and (max-width: 450px){
     .vh_container{
@@ -594,6 +594,12 @@ footer{
 
     &:first-child{
       border-right: 1px solid $grey;
+    }
+
+    p{
+      a{
+        text-decoration: underline;
+      }
     }
 
     ul{
