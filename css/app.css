@@ -26,6 +26,7 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -228,6 +229,10 @@ li {
   text-align: right;
 }
 
+#services .services_content ul li {
+  margin: auto;
+}
+
 #services .services_content ul li:first-child {
   color: red;
   text-transform: uppercase;
@@ -236,9 +241,9 @@ li {
 
 @media screen and (min-width: 800px) {
   #services .services_content {
-    width: 95%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    width: 95%;
   }
   #services .services_content ul {
     width: 350px;
@@ -713,5 +718,65 @@ li {
   #about .about_content .bloc h2 {
     font-size: 1.3rem;
   }
+}
+
+footer {
+  position: relative;
+}
+
+footer .arrowUp {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 50px;
+}
+
+#footer {
+  min-height: 300px;
+  padding: 3em;
+  color: #aaaaaa;
+  background: #000;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#footer .bloc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer .bloc:first-child {
+  border-right: 1px solid #838383;
+}
+
+#footer .bloc ul li {
+  margin: 1em 0;
+}
+
+#footer .bloc ul li a {
+  text-decoration: underline;
+  position: relative;
+}
+
+#footer .bloc ul li a.linkedin::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0px;
+  left: -32px;
+  background: center/cover url("../img/reseaux/linkedin.svg");
+}
+
+#footer .bloc ul li a.github::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0px;
+  left: -32px;
+  background: center/cover url("../img/reseaux/github.svg");
 }
 /*# sourceMappingURL=app.css.map */

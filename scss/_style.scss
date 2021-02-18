@@ -67,20 +67,20 @@
             text-align: right;
           }
 
+          li{margin: auto;}
           li:first-child{
             // TITRE DES SERVICES PROPOSES
               color: red;
               text-transform: uppercase;
               font-weight: bold;
-
           }
         }
 
         @media screen and (min-width: 800px){
+          display: flex;
+          justify-content: space-around;
 
           width: 95%;
-          display: flex;
-          justify-content: space-evenly;
 
           ul{
             width: 350px;
@@ -561,6 +561,66 @@
       .bloc{
         h2{
           font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}
+
+footer{
+  position: relative
+  ;
+  .arrowUp{
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50px;
+  }
+}
+
+#footer{
+  min-height: 300px;
+  padding: 3em;
+  color: $lightgrey;
+  background: $black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .bloc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:first-child{
+      border-right: 1px solid $grey;
+    }
+
+    ul{
+      li{ 
+        margin: 1em 0;
+        a{
+          text-decoration: underline;
+          position: relative;
+        }
+
+        a.linkedin::before{
+          content: "";
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          top: 0px;
+          left: -32px;
+          background: center/cover url("../img/reseaux/linkedin.svg");
+        }
+        a.github::before{
+          content: "";
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          top: 0px;
+          left: -32px;
+          background: center/cover url("../img/reseaux/github.svg");
         }
       }
     }
