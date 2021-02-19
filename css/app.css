@@ -652,6 +652,10 @@ li {
   background: center/cover url("../img/sites/GamingCampus-min.jpg") !important;
 }
 
+#portfolio .portfolio_content .projetFiasco {
+  background: center/cover url("../img/sites/fiasco-min.jpg") !important;
+}
+
 @media screen and (max-width: 500px) {
   #portfolio .portfolio_content .card:last-child {
     position: relative;
