@@ -179,6 +179,7 @@ li {
   text-transform: uppercase;
   margin-bottom: 1em;
   color: #fff;
+  transform: translateY(-700px);
 }
 
 #vh .vh_container h2 {
@@ -186,6 +187,7 @@ li {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #fff;
+  transform: translateX(-5000px);
 }
 
 #vh .vh_container h2 span {
@@ -251,8 +253,14 @@ li {
   #services .services_content ul li {
     width: 300px;
   }
+  #services .services_content .services_content_bloc_1 {
+    opacity: 0;
+  }
   #services .services_content .services_content_bloc_1 ul {
     text-align: right;
+  }
+  #services .services_content .services_content_bloc_2 {
+    opacity: 0;
   }
   #services .services_content .services_content_bloc_2 ul {
     text-align: left;
@@ -262,6 +270,10 @@ li {
 #competences {
   background: #fff;
   margin-top: 200px;
+}
+
+#competences .competences_content .comp_domaine {
+  opacity: 0;
 }
 
 #competences .competences_content .comp_domaine h3 {
@@ -313,42 +325,50 @@ li {
 
 #competences .competences_content .comp_dev .progHTML {
   display: inline-block;
-  width: 80%;
+  width: 10%;
+  transition: 3s;
 }
 
 #competences .competences_content .comp_dev .progPHP {
   display: inline-block;
-  width: 30%;
+  width: 10%;
+  transition: 3s;
 }
 
 #competences .competences_content .comp_dev .progJS {
   display: inline-block;
-  width: 50%;
+  width: 10%;
+  transition: 3s;
 }
 
 #competences .competences_content .comp_dev .progSQL {
   display: inline-block;
-  width: 30%;
+  width: 10%;
+  transition: 3s;
 }
 
 #competences .competences_content .comp_dev .progPS {
   display: inline-block;
-  width: 35%;
+  width: 10%;
+  transition: 3s;
 }
 
 #competences .competences_content .comp_dev .progILL {
   display: inline-block;
-  width: 35%;
+  width: 10%;
+  transition: 3s;
 }
 
 #competences .competences_content .comp_dev .progIND {
   display: inline-block;
-  width: 40%;
+  width: 10%;
+  transition: 3s;
 }
 
 #competences .competences_content .comp_dev .progXD {
   display: inline-block;
-  width: 30%;
+  width: 10%;
+  transition: 3s;
 }
 
 @media screen and (min-width: 800px) {
@@ -786,5 +806,32 @@ footer .arrowUp {
   top: 0px;
   left: -32px;
   background: center/cover url("../img/reseaux/github.svg");
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-700px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-5000px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=app.css.map */

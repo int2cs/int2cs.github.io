@@ -21,12 +21,14 @@
       text-transform: uppercase;
       margin-bottom: 1em;
       color: $white;
+      transform: translateY(-700px);
     }
     h2{
       font-weight: 400;
       letter-spacing: 0.1em;
       text-transform: uppercase;
       color: $white;
+      transform: translateX(-5000px);
 
       span{
         color: $black;
@@ -57,7 +59,6 @@
     .services_content{
         width: 95%;
         margin: auto;
-
 
         ul{
           padding: 0;
@@ -90,13 +91,21 @@
             }
           }
           
-          .services_content_bloc_1 ul{
-            text-align: right;
-          }
+          .services_content_bloc_1{
+            opacity: 0;
 
-          .services_content_bloc_2 ul{
-            text-align: left;
-          }
+            ul{
+              text-align: right;
+            }
+          } 
+
+          .services_content_bloc_2{
+            opacity: 0;
+
+            ul{
+              text-align: left;
+            }
+          } 
         }
     }
 }
@@ -108,6 +117,7 @@
   .competences_content{
 
     .comp_domaine{
+      opacity: 0;
 
     h3{
       margin-left: 1em;
@@ -161,37 +171,48 @@
           }
         }
       }
+
+      $progTransition : 3s;
+      $percent : 10%; 
       .progHTML {
         display: inline-block;
-        width: 80%;
+        width: $percent;
+        transition: $progTransition;
       }
       .progPHP {
         display: inline-block;
-        width: 30%;
+        width: $percent;
+        transition: $progTransition;
       }
       .progJS {
         display: inline-block;
-        width: 50%;
+        width: $percent;
+        transition: $progTransition;
       }
       .progSQL {
         display: inline-block;
-        width: 30%;
+        width: $percent;
+        transition: $progTransition;
       }
       .progPS {
         display: inline-block;
-        width: 35%;
+        width: $percent;
+        transition: $progTransition;
       }
       .progILL {
         display: inline-block;
-        width: 35%;
+        width: $percent;
+        transition: $progTransition;
       }
       .progIND {
         display: inline-block;
-        width: 40%;
+        width: $percent;
+        transition: $progTransition;
       }
       .progXD {
         display: inline-block;
-        width: 30%;
+        width: $percent;
+        transition: $progTransition;
       }
 
     }
@@ -248,12 +269,14 @@
       height: 200px;
       margin: 20px 0;
       overflow: hidden;
-      filter: grayscale(80%);
+      -webkit-filter: grayscale(80%);
+              filter: grayscale(80%);
       transition: 1s;
 
       &:hover{
         height: 600px;
-        filter: grayscale(0);
+        -webkit-filter: grayscale(0);
+                filter: grayscale(0);
 
         .cursor{
           visibility: visible;
@@ -403,11 +426,13 @@
         opacity: 0.95;
         transform: translate(-80%);
         transition: 1s;
-        clip-path: polygon(0% 0%, 75% 0%, 90% 50%, 75% 100%, 0% 100%);
+        -webkit-clip-path: polygon(0% 0%, 75% 0%, 90% 50%, 75% 100%, 0% 100%);
+                clip-path: polygon(0% 0%, 75% 0%, 90% 50%, 75% 100%, 0% 100%);
 
         &:hover{
           transform: translateX(-10%);
-          clip-path: polygon(0% 0%, 100% 0, 87% 52%, 75% 100%, 0% 100%);
+          -webkit-clip-path: polygon(0% 0%, 100% 0, 87% 52%, 75% 100%, 0% 100%);
+                  clip-path: polygon(0% 0%, 100% 0, 87% 52%, 75% 100%, 0% 100%);
         }
         &:hover .cursor{
           visibility: hidden;
@@ -415,7 +440,8 @@
 
         .cursor{
           visibility: hidden;
-          object-fit: center/cover;
+          -o-object-fit: center/cover;
+             object-fit: center/cover;
           width: 20px;
           height: 20px;
           opacity: 0.8;
@@ -436,12 +462,14 @@
         opacity: 0.95;
         transform: translate(80%);
         transition: 1.5s;
-        clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 10% 50%);
+        -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 10% 50%);
+                clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 10% 50%);
 
 
         &:hover{
           transform: translateX(10%);
-          clip-path: polygon(0 0, 100% 0%, 100% 100%, 25% 100%, 13% 52%);
+          -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 25% 100%, 13% 52%);
+                  clip-path: polygon(0 0, 100% 0%, 100% 100%, 25% 100%, 13% 52%);
         }
         &:hover .cursor{
           visibility: hidden;
@@ -449,7 +477,8 @@
 
         .cursor{
           visibility: hidden;
-          object-fit: cover;
+          -o-object-fit: cover;
+             object-fit: cover;
           width: 20px;
           height: 20px;
           opacity: 0.8;
