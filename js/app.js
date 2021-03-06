@@ -4,11 +4,6 @@ $(document).ready(function () {
   $('h1').css('animation', 'slideDown 0.5s forwards ease-out');
   $('h2').eq(0).css('animation', 'slideRight 0.8s forwards ease-out');
 
-  // TODO Penser à effacer le console.log 
-  $(window).scroll(function () {
-    console.log($(window).scrollTop());
-  });
-
   // déclanchement des animations quand le scrollTop est à 400
   // #services
   $(window).scroll(function () {
